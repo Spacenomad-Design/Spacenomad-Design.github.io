@@ -4,6 +4,13 @@
 		background: white
 		padding: 30px 0
 
+		video
+			height: 100%
+			transform: translateX(-50%)
+			position: fixed
+			top: 0
+			filter: contrast(90%)
+
 		.header-position
 			position: fixed
 			top: 30px
@@ -34,18 +41,22 @@
 
 			li
 				margin-bottom: 10px
+				background-color: rgba(0, 0, 0, .25)
+
+				&:hover
+					background-color: rgba(0, 0, 0, .45)
 
 				&:last-child
 					margin-bottom: 0
 
 			a
-				color: black
+				color: #e0e0e0
 
 		.email-link
 			display: block
 			text-align: right
 			padding-right: 30px
-			color: black
+			color: #e0e0e0
 
 		.mobile-nav-toggle
 			cursor: pointer
@@ -138,6 +149,9 @@
 			top: 0
 			right: 0
 			left: 0
+
+			video
+				display: none
 
 			.header-position
 				position: relative
