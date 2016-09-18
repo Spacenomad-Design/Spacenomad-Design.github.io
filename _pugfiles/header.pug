@@ -1,0 +1,22 @@
+mixin nav-content()
+	ul
+		li: a(href="#home") home
+		li: a(href="#services") services
+		li: a(href="#portfolio") portfolio
+		li: a(href="#adventures") adventures
+		li: a(href="#contact") contact
+		li: a(href="#about") about
+
+.mobile-nav
+	+nav-content()
+
+header
+	.header-position
+		h1.logo Spacenomad-Design
+
+		nav.site-nav
+			+nav-content()
+
+		a(href="mailto:spacenomad-design@gmail.com").email-link +message me
+
+		label(for= 'nav-toggle').mobile-nav-toggle: span
